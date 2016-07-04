@@ -1,0 +1,123 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<style>
+body { 
+background-image: url(http://sadelstein.com/wp-content/uploads/2014/01/London-Blue-Lights.jpg);
+background-size: 120%;
+font-family: Arial;
+font-size: 16px;
+color:white;	
+width: auto;
+height: auto;
+}
+.login {	
+height: 150px;
+	width: 1250px;
+	padding: 10px;
+	z-index: 2;
+}
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+.login input[id=button]{
+	width: 250px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+.login input[id=button]:hover{
+	opacity: 0.8;
+}
+.login input[id=button]:active{
+	opacity: 0.6;
+}
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+.login input[id=button]:focus{
+	outline: none;
+}
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+</style>
+</head>
+<body>
+<div class="login"; align="center">
+<fieldset style="width:50%"><legend>Sign Up to StoreBox</legend>
+<br>
+<form action='DB_info.php' method = 'POST'">
+<td><input type="text" name="firstname" placeholder="First name"
+required title="First Name Required"></td>
+<br>
+<br>
+<td><input type="text" name="lastname" placeholder="Last name"
+required title="Last Name Required"></td>
+<br>
+<br>
+<td><input type="text" name="email" placeholder="E-mail"
+required title="Email Invalid"></td>
+<br>
+<br>
+<td><input type="text" name="ausername" placeholder="Username"
+input pattern=".{5,15}" required title="5 to 15 characters"></td>
+<br>
+<br>
+<td><input type="password" name="password" placeholder="Password"
+input pattern=".{5,15}" required title="5 to 15 characters"></td>
+<br>
+<br>
+<td><input type="password" name="cpassword" placeholder="Confirm Password"
+input pattern=".{5,15}" required title="5 to 15 characters"></td>
+<br>
+<br>
+<td><input id="button" type="submit" name="submit" value="Sign-Up"></td>
+<br>
+<br>
+<td><input type="button" value="Go Back" onClick="window.location.href='StoreBox.html'"></td>
+<br>
+</div>
+</form>
+</fieldset>
+</div> 
+</body>
+</html>
